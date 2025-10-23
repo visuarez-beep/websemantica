@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <!--barra de navegacion-->
+    <header class="header flex space-around">
+        <div class="">
+            <img src="../img/grabadora.png" alt="Logo" id="logo">
+        </div>
+        <nav class="flex space-around wrap">
+            <a href="../index.html"><button class="btn-none">
+                <h3>Inicio</h3>
+            </button></a>
+            <a href="../inicio.html"><button class="btn-none">
+                <h3>Reviws</h3>
+            </button></a>
+            <a href="../noticias.html"><button class="btn-none">
+                <h3>Noticias</h3>
+            </button></a>
+            <a href="../contacto.html"><button class="btn-none">
+                <h3>Contacto</h3>
+            </button></a>
+        </nav>
+    </header>
+<!-- el cuerpo que se divide con un grid dividido en 10 y se llenac con secciones o div y se ajusta el ancho con span-N -->
+    <div class="cuerpo grid align-start ">
+        <section class="span-7 center bg-color-white" >
+            <div class="grid">
+                <div class="span-3 flex-column gap pading-basico align-start resena">
+                    <img src="../img/peliculas/pelicula3.png" alt="pelicula1" class=" width-100">
+                    <h2 class="star">5</h2>
+                    <h2 class="nomargin">Ceniza y Sal</h2>
+                    <h4 class="nomargin"> Pelicula </h4>
+                        
+
+                </div>
+                <div class="span-7">
+                    <section class="flex-column pading-basico resena">
+                        <h3>Generos</h3> <span> Drama histórico - Bélico - Romance</span>
+                        <article class="text-left">
+                            <h4>Reseña</h4>
+                            <p>
+                            El húngaro Janos Varga firma una de las películas bélicas más humanas de los últimos años. “Ceniza y Sal” no se enfoca en la guerra como espectáculo, sino como herida. Ambientada en los últimos días de un conflicto no identificado, la historia sigue a Anna Kovács, una mujer que busca a su familia entre escombros. En ese trayecto se encuentra con un soldado enemigo, y lo que comienza como una confrontación termina transformándose en una relación silenciosa y ambigua.
+
+                            La película se apoya en una fotografía austera, dominada por grises, blancos y sombras que evocan el olvido. Cada encuadre transmite desolación. Pero lo que la hace inolvidable es su mirada hacia la humanidad en medio del horror. Varga construye un relato sin discursos morales, donde los personajes se enfrentan al peso del arrepentimiento. La sal, recurrente en toda la cinta, funciona como símbolo de purificación y memoria. “Ceniza y Sal” es, en última instancia, una historia sobre la fragilidad de lo humano y la necesidad de redención. Su final —triste pero esperanzador— deja una marca duradera en el alma del espectador.    
+                            </p>
+                             <small>Escrito por <strong>Maria</strong> <time datetime="2025-10-12">Octubre del 2025</time> </small>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <aside class="span-3 flex-column scroll-y aside1">
+            <h3 class="center">Recomendación </h3>
+            <!--1-->
+            <section class="noticia flex">
+                <img src="../img/peliculas/pelicula1.png" alt="pelicula4" class="">
+                <article class="noticia prioridad3">
+                    <a href="pelicula1.html" class="flex-column no-gap">
+                        <h4 class="prioridad1 nomargin">
+                            Ecos de Mercurio
+                        </h4>
+                        <p class="prioridad4">
+                            Es una de esas películas que trascienden el género de ciencia ficción para adentrarse en el terreno de la filosofía visual. La directora Lara Hensworth construye una atmósfera tan hipnótica como perturbadora: planos largos, diálogos mínimos y una fotografía metálica que parece fundirse con el calor del planeta. La historia sigue a un astronauta asignado a una misión de observación en Mercurio que comienza a recibir señales de radio provenientes de sí mismo, mensajes de su futuro —o su pasado—. Esta premisa, aparentemente técnica, se convierte en un viaje introspectivo sobre la identidad, la soledad y la imposibilidad de escapar de uno mismo.
+                        </p>
+                    </a>
+                </article>
+            </section>
+            <!--2-->
+            <section class="noticia flex">
+                <img src="../img/peliculas/pelicula2.png" alt="pelicula2" class="">
+                <article class="noticia prioridad3">
+                    <a href="pelicula2.html" class="flex-column no-gap">
+                        <h4 class="prioridad1 nomargin">
+                             El jardín de los relojes rotos
+                        </h4>
+                        <p class="prioridad4">
+                            La ópera prima de Marcos Aranda es un ejercicio de sensibilidad poética. “El jardín de los relojes rotos” presenta un universo donde el tiempo no fluye de manera lineal, sino emocional. La protagonista, Clara, hereda un invernadero en el que cada reloj detenido encierra la memoria de su antiguo dueño. La metáfora es tan poderosa como visualmente hermosa: cada tic-tac representa una vida interrumpida. A medida que Clara intenta reparar los relojes, comienza a reconstruir también su propia historia.
+                        </p>
+                        </a>
+                </article>
+                <!--3-->
+            </section>
+            <section class="noticia flex">
+                <img src="../img/peliculas/pelicula3.png" alt="pelicula3" class="prioridad1">
+                <article class="noticia prioridad3">
+                    <a href="pelicula3.html" class="flex-column no-gap">
+                        <h4 class="prioridad1 nomargin">
+                            Ceniza y Sal
+                        </h4>
+                        <p class="prioridad4">
+                            
+                        El húngaro Janos Varga firma una de las películas bélicas más humanas de los últimos años. “Ceniza y Sal” no se enfoca en la guerra como espectáculo, sino como herida. Ambientada en los últimos días de un conflicto no identificado, la historia sigue a Anna Kovács, una mujer que busca a su familia entre escombros. En ese trayecto se encuentra con un soldado enemigo, y lo que comienza como una confrontación termina transformándose en una relación silenciosa y ambigua.
+                    
+                        </p>
+                    </a>
+                </article>
+                
+            </section>
+        </aside>
+
+    </div>
+    <footer class="flex space-around no-gap nomargin" >
+
+            <div><!--para aplicar el flex a 2 elementos juntos-->
+                <h4>Sobre nosotros</h4>
+                <p>Descubre las mejores películas y las peores decepciones del cine. 
+                <br> Lee reseñas honestas.Calificaciones de usuarios y críticas detalladas antes de decidir qué ver. Comparte tu opinión, y encuentra tu próxima película favorita. Tu guía definitiva para el séptimo arte está aquí.</p>
+                <p><a href="https://creativecommons.org">Review_birt</a> © 2025 by <a href="https://creativecommons.org">Victor Manuel Suarez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+
+            </div>
+            
+            <div><!--para aplicar el flex a 2 elementos juntos-->
+                <h4>Contacto</h4>
+                <p>telefono: 123456789</p>
+                <p>email:PeliculasParati@gmail.com</p>
+            </div>
+
+    </footer>
+
+</body>
+</html>

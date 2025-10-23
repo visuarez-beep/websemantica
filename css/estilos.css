@@ -1,0 +1,537 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+html, body{
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    text-decoration: none;
+    list-style: none;
+}
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+header{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+
+}
+
+
+/* body y div cuerpo */
+body{
+
+    color: black ;
+    overflow-x: hidden;
+    margin-bottom: 150px;
+    position: relative;
+    min-height: 80vh;
+    min-width: 900px;
+}
+.cuerpo{
+    width: 80%;
+    margin: auto;
+    top: 10px;
+    padding: 20px 0;
+    overflow-x: hidden;
+   
+}
+
+.max-cuerpo-800{
+    max-height: 800px;
+    margin: auto;
+    top: 10px;
+    padding: 20px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+}
+
+.min-cuerpo{
+    min-height: 600px;
+    margin: auto;
+    top: 10px;
+    padding: 20px 0;
+    overflow-x: hidden;
+   
+}
+/* Flexbox */
+.flex{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+}
+.wrap{
+    flex-wrap: wrap;
+
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center-items{
+    align-self: center;
+    justify-self: center;
+}
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-start{
+    justify-content: flex-start;
+    align-items: center;
+}
+.space-stretch{
+    justify-content: space-between;
+    align-items: stretch;
+}
+.no-gap{
+    gap: 0px;
+}
+.gap{
+    gap: 10px;
+}
+.space-around{
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* grid */
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+}
+
+.width-100{
+    width: 100%;
+}
+.width-50{
+    width: 50%;
+
+}
+.altura-100{
+    height: 80%;
+}
+
+.span-2{
+    grid-column: span 2;
+} 
+.span-3{
+    grid-column: span 3;
+}
+.span-4{
+    grid-column: span 4;
+}
+.span-5{
+    grid-column: span 5;
+}
+.span-6{
+    grid-column: span 6;
+}
+.span-7{
+    grid-column: span 7;
+}
+.span-8{
+    grid-column: span 8;
+}
+.span-9{
+    grid-column: span 9;
+}
+.span-10{
+    grid-column: span 10;
+}
+.sapan-column-2{
+    grid-row: span 2;
+}
+.sapan-column-3{
+    grid-row: span 3;
+}
+.sapan-column-4{
+    grid-row: span 4;
+}
+.sapan-column-5{
+    grid-row: span 5;
+}
+.prioridad1{
+ flex-grow: 1;
+}
+.prioridad2{
+ flex-grow: 2;
+}
+.prioridad3{
+ flex-grow: 3;
+}
+.prioridad4{
+ flex-grow: 4;
+}
+
+.nomargin{
+    margin: 0;
+}
+.margin-basico{
+    margin: 10px 10px;
+}
+.pading-basico{
+    padding: 10px;
+}
+
+
+
+
+/* botones */
+
+
+.btn-primary{
+    background-color: #646668;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-secondary{
+    background-color: #A9A9A9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-none{
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+/*colores*/
+.color-white{
+    color: white;
+}
+.bg-color-white{
+    background-color: white;
+}
+.btn-none:hover{
+
+    text-decoration: underline;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.1);
+}
+#logo{
+    width: 100px;
+    object-fit: fill;
+}
+
+/*redes y animacion*/
+
+.redes{
+    width: 80%;
+    max-height: 80px;
+    object-fit: cover;
+    margin: 0 5px;
+    overflow: hidden;
+}
+.redes img{
+    width: 80px;
+    height: 100%;
+    max-height: 80px;
+    object-fit: cover;
+}
+.redes:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+
+
+/*imagenes*/
+#superponer1{
+    background-image: url("../img/superponer1png.png");
+    background-size: cover;
+    height: 400px;
+
+}
+#superponer2{
+    background-image: url("../img/superponer2png.png");
+    background-size: cover;
+    height: 400px;
+    
+}
+.superponer{
+    width: 50%;
+    transition: all 0.4s;
+    z-index: 10;
+    flex: 0 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.superponer:hover{
+    width: 90%;
+    box-shadow: 0px 0px 2px 0px black;
+    z-index: 80;
+    flex: 3 1 auto;
+}
+.superponer:hover button{
+    width: 1000px;
+    background-color: rgba(90, 97, 131, 0.671)
+
+}
+.superponer button{
+    transition: all 0.5s;
+    width: 100px;
+}
+
+
+.review{
+    aspect-ratio: 1.5/2.8;
+    max-width: 250px;
+    max-height: 400px;
+    background-color: rgba(174, 174, 174, 0.153);
+    font-size: 0.9em;
+    overflow: hidden;
+    transform: scale(1);
+    border-radius: 10px;
+    transition: all 0.3s;
+    color: black;
+    text-decoration: none;
+}
+
+.nosotros{
+    min-width: 200px;
+    background-color: rgba(174, 174, 174, 0.153);
+    font-size: 0.9em;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s;
+    color: black;
+    text-decoration: none;
+    padding: 0% 3% 1% 2%;
+}
+.nosotros p{
+    font-size: 1em;
+    line-height: 1.1em;
+    text-align: justify;
+    overflow: hidden;
+    white-space: pre-line;
+}
+.review:hover{
+    transform: scale(0.96);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.review img{
+    padding-top: 10px;
+    object-fit: contain;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+.review article{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    overflow: hidden;
+}
+.review p{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 0.60em;
+    text-align: justify;
+    overflow: hidden;
+    transition: all 0.1s;
+}
+.star::after{
+    content: '★';
+    color: gold;
+}
+
+.noticia{
+    width: 100%;
+    height: 80px;
+    max-height: 80px;
+  
+}
+
+.noticia img{
+    flex: 0 1 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.noticia a{
+    width: 100%;
+    height: 100%;
+    font-size: 0.8em;
+    overflow: hidden;
+   
+    
+}
+.noticia p{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 0.9em;
+    text-align: justify;
+    overflow: hidden;
+}
+.noticia a:hover{
+    color: #646668;
+    text-decoration: underline;
+}
+
+
+/* aside */
+.aside1{
+    background-color: rgba(196, 215, 215, 0.133);
+    padding: 10px;
+    max-height: 800px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.aside2{
+    background-color: rgba(196, 215, 215, 0.133);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* scroll */
+.scroll-y{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.scroll-x{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.noscrolbar{
+    overflow: hidden;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    box-shadow: 0 -5px 5px rgba(0,0,0,0.1);
+    background-color: #646668;
+    color: white;
+    font-size: 0.75em;
+    position: fixed;
+    height: 10vh;
+    min-height: 110px;
+    bottom: 0px;
+    z-index: 100;
+}
+.footer p{
+    white-space: pre;
+    color: white;
+}
+
+
+/* formulario */
+
+.formulario{
+    width: 100;
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+    background-color: rgba(100, 102, 104, 0.1);
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.formulario input, .formulario textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.formulario button{
+    background-color: #646668;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resena{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-align: justify;
+    overflow: hidden;
+}
+.resena p{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.resena small{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-align: justify;
+    overflow: hidden;
+    color: #646668;
+}
+.resena h2{
+    font-size: 1.5em;
+    border-bottom: 2px solid #646668;
+    text-align: center;
+}
+.resena h4{
+    font-size: 1.2em;
+    border-bottom: 1px solid #646668;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.resena h3{
+    font-size: 1.3em;
+    border-bottom: 1px solid #646668;
+    margin: 0;
+    padding: 0;
+}
+.resena span{
+    font-weight: bold;
+    color: #646668;
+}
+.pre{
+    white-space: pre;
+}
+
+.height-100{
+    height: 100%;
+}
